@@ -14,8 +14,6 @@ void printHighestAllYears();
 void printLowestYear2004();
 void printHighestYear2004();
 
-
-
 struct income
 {
 	char state[40];
@@ -24,7 +22,6 @@ struct income
 
 //number of states
 struct income states[NUM];
-
 
 
 int main()
@@ -36,6 +33,7 @@ int main()
 	printHighestYear2004();
 	return 0;
 }
+
 
 void readFromFile()
 {
@@ -107,6 +105,7 @@ void readFromFile()
 	fclose(fp);
 }
 
+
 void printLowestAllYears()
 {
 	int i = 0;
@@ -156,6 +155,7 @@ void printLowestAllYears()
 		printf("\nLowest Median Income was $%d in %s in 2005\n", states[min05].incomes[2], states[min05].state);
 	}
 }
+
 
 void printHighestAllYears()
 {
@@ -207,6 +207,7 @@ void printHighestAllYears()
 	}
 }
 
+
 void printLowestYear2004()
 {
 	int i = 0;
@@ -223,6 +224,7 @@ void printLowestYear2004()
 	}
 	printf("\nLowest Median Income in 2004 was $%d in %s\n", states[lowest].incomes[1], states[lowest].state);
 }
+
 
 void printHighestYear2004()
 {
