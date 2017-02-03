@@ -40,8 +40,11 @@ void readFromFile()
 	FILE *fp;
 	char strBuff[80];
 	char temp[30];
-	int i, j, nstate = 0;
+	int i = 0, j, nstate = 0;
+	char delim[3] = "\t";
+	char *token;
 
+	
 	fp = fopen("C:\\Users\\sndri\\Documents\\Familyincome.txt", "r");
 	if (fp == NULL)
 	{
